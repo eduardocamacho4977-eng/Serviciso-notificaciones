@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guía SENA: Servicios y Notificaciones"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- SECCIÓN BASE: SERVICIO MÚSICA -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--- Servicio de Música (Foreground) ---"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btn_arrancar_musica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrancar Música"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btn_detener_musica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detener Música" />
+        </LinearLayout>
+
+        <!-- EJERCICIO 1: SERVICIO CONTADOR -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--- Ejercicio 1: Servicio Contador ---"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_iniciar_contador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Contador (1 al 10 en Logcat)"
+            android:layout_marginBottom="12dp" />
+
+        <!-- EJERCICIO 2 Y 4: SERVICIO OPERACIÓN -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--- Ejercicio 2 y 4: Servicio Operación ---"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_numero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese un número (ej. 5)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btn_calcular_factorial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Factorial (Ej 2)"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/btn_calcular_cuadrado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cuadrado (Ej 4)"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+
+        <!-- EJERCICIO 3: SERVICIO DESCARGA -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--- Ejercicio 3: Servicio Descarga ---"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_iniciar_descarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simular Descarga de 10 Archivos"
+            android:layout_marginBottom="12dp" />
+
+        <!-- EJERCICIO 5 Y 6: NOTIFICACIONES AVANZADAS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--- Ejercicio 5 y 6: Notificaciones ---"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_notificacion_acciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notificación con Botones (Ej 5)"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_notificacion_imagen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notificación BigPictureStyle (Ej 6)"
+            android:layout_marginBottom="12dp" />
+
+        <!-- EJERCICIO 7 Y 8: BROADCAST RECEIVER DINO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--- Ejercicio 7 y 8: BroadcastReceiver ---"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Los receptores de Cargador y Modo Avión responderán automáticamente mostrando mensajes Toast cuando cambie el estado en el dispositivo."
+            android:textSize="12sp"
+            android:textColor="#666666" />
+
+    </LinearLayout>
+
+</ScrollView>
